@@ -99,7 +99,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
-    marginBottom: -40,
   },
   sticker: {
     width: (win.width - 60) / 4 - 10,

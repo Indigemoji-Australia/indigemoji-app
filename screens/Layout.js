@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 
-export default Layout = props => (
+const Layout = props => (
   <ImageBackground
     style={styles.container}
     source={require('../assets/images/background.png')}>
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container} forceInset={{bottom: 'never'}}>
       <View style={styles.header}>
         <TouchableOpacity
           style={styles.button}
@@ -47,3 +47,5 @@ const styles = StyleSheet.create({
     height: 50,
   },
 });
+
+export default Layout;
