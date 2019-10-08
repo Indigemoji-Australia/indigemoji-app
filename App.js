@@ -10,12 +10,29 @@ import FAQScreen from './screens/FAQ';
 import TeamScreen from './screens/Team';
 import Drawer from './screens/Drawer';
 
+const icons = {
+  home: require('./assets/images/icon1.png'),
+  about: require('./assets/images/icon3.png'),
+  faq: require('./assets/images/icon4.png'),
+  team: require('./assets/images/icon5.png'),
+};
+
 const drawerWidth = 100;
 const iconSize = {width: drawerWidth - 20, height: drawerWidth - 20};
 
 const defaultStackOptions = {
   headerTransparent: true,
   headerStyle: {borderBottomWidth: 0, height: 0},
+};
+
+const makeIcon = icon => {
+  return ({tintColor}) => (
+    <Image
+      source={icon}
+      resizeMode="center"
+      style={[{tintColor: tintColor}, iconSize]}
+    />
+  );
 };
 
 const HomeStack = createStackNavigator(
@@ -39,52 +56,28 @@ const DrawerNavigator = createDrawerNavigator(
       screen: HomeStack,
       navigationOptions: {
         drawerLabel: () => null,
-        drawerIcon: ({tintColor}) => (
-          <Image
-            source={require('./assets/images/icon1.png')}
-            resizeMode="center"
-            style={[{tintColor: tintColor}, iconSize]}
-          />
-        ),
+        drawerIcon: makeIcon(icons.home),
       },
     },
     About: {
       screen: AboutScreen,
       navigationOptions: {
         drawerLabel: () => null,
-        drawerIcon: ({tintColor}) => (
-          <Image
-            source={require('./assets/images/icon3.png')}
-            resizeMode="center"
-            style={[{tintColor: tintColor}, iconSize]}
-          />
-        ),
+        drawerIcon: makeIcon(icons.about),
       },
     },
     FAQ: {
       screen: FAQScreen,
       navigationOptions: {
         drawerLabel: () => null,
-        drawerIcon: ({tintColor}) => (
-          <Image
-            source={require('./assets/images/icon4.png')}
-            resizeMode="center"
-            style={[{tintColor: tintColor}, iconSize]}
-          />
-        ),
+        drawerIcon: makeIcon(icons.faq),
       },
     },
     Team: {
       screen: TeamScreen,
       navigationOptions: {
         drawerLabel: () => null,
-        drawerIcon: ({tintColor}) => (
-          <Image
-            source={require('./assets/images/icon5.png')}
-            resizeMode="center"
-            style={[{tintColor: tintColor}, iconSize]}
-          />
-        ),
+        drawerIcon: makeIcon(icons.team),
       },
     },
   },
