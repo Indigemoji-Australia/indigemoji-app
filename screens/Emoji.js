@@ -25,7 +25,7 @@ export default class IconDetail extends React.Component {
 
   onShare(data) {
     let shareImageBase64 = {
-      url: data.image,
+      url: "file://" + data.file,
     };
     Share.open(shareImageBase64);
   }
@@ -36,7 +36,7 @@ export default class IconDetail extends React.Component {
     return (
       <ScrollView>
         <View style={styles.stickerDetail}>
-          <Image source={{uri: emoji.image}} style={styles.stickerImage} />
+          <Image source={{uri: emoji.file.replace(".png", "")}} style={styles.stickerImage} />
           <Text style={styles.stickerName}>
             {this.state.languege === 'en' ? emoji.name : emoji.name_arrernte}
           </Text>

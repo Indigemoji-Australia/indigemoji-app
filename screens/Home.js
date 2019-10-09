@@ -83,7 +83,7 @@ export default class Home extends React.Component {
                   key={index}
                   onPress={() => this.viewEmoji(item)}>
                   <Image
-                    source={{uri: item.image}}
+                    source={{uri: item.file.replace(".png", "")}}
                     indicatorProps={{
                       size: 50,
                       color: 'rgba(150, 150, 150, 1)',
