@@ -8,9 +8,12 @@ import {
   ScrollView,
   Text,
   SafeArea,
+  Modal,
   Dimensions,
 } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 import Layout from './Layout';
+import Intro from './Intro';
 import {emojis} from '../assets/emojis.json';
 const win = Dimensions.get('window');
 
@@ -20,7 +23,20 @@ export default class Home extends React.Component {
     this.state = {
       stickers: emojis,
       searchString: '',
+      showIntro: false,
     };
+  }
+
+  async componentDidMount() {
+    try {
+      const value = await AsyncStorage.getItem('hasOpened');
+      if (value === null) {
+        this.setState({showIntro: true});
+        await AsyncStorage.setItem('hasOpened', "true")
+      }
+    } catch (e) {
+      console.warn(e);
+    }
   }
 
   onSearchChange = e => {
@@ -29,6 +45,10 @@ export default class Home extends React.Component {
 
   viewEmoji = data => {
     this.props.navigation.navigate('EmojiDetails', {data: data});
+  };
+
+  hideIntro = () => {
+    this.setState({showIntro: false});
   };
 
   render() {
@@ -76,6 +96,12 @@ export default class Home extends React.Component {
             </View>
           </ScrollView>
         </View>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.showIntro}>
+          <Intro hideIntro={this.hideIntro} />
+        </Modal>
       </Layout>
     );
   }
