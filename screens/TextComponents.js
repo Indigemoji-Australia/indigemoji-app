@@ -1,11 +1,15 @@
 import React from 'react';
-import {Linking, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Linking, Text, StyleSheet, TouchableOpacity, View} from 'react-native';
 
 const TextBody = props => <Text style={styles.body}>{props.children}</Text>;
 
 const TextTitle = props => <Text style={styles.title}>{props.children}</Text>;
 
 const TextStrong = props => <Text style={styles.strong}>{props.children}</Text>;
+
+const TextWrapper = props => (
+  <View style={styles.wrapper}>{props.children}</View>
+);
 
 const Link = props => (
   <Text style={styles.link} onPress={() => Linking.openURL(props.url)}>
@@ -32,6 +36,14 @@ const styles = StyleSheet.create({
   link: {
     textDecorationLine: 'underline',
   },
+  wrapper: {
+    flex: 1,
+    marginTop: 20,
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    padding: 30,
+  },
 });
 
-export {Link, TextBody, TextTitle, TextStrong};
+export {Link, TextBody, TextTitle, TextStrong, TextWrapper};
