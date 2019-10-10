@@ -14,14 +14,6 @@ import {Icon, Button} from 'react-native-elements';
 import SafeAreaView from 'react-native-safe-area-view';
 import Swiper from 'react-native-swiper';
 
-// <Icon
-//   name="x"
-//   type="feather"
-//   color="#4a4a4a"
-//   size={26}
-//   iconStyle={styles.close}
-//   onPress={props.hideIntro}
-// />
 const win = Dimensions.get('window');
 const bgImage = require('../assets/images/background.png');
 
@@ -48,11 +40,11 @@ export default Intro = props => (
       <Button
         style={styles.close}
         icon={
-          <Icon name="x" type="feather" size={20} color="#fff" iconStyle={{}} />
+          <Icon name="x" type="feather" size={20} color="#000" iconStyle={{}} />
         }
         title="Close"
         type="clear"
-        titleStyle={{color: '#fff', fontSize: 20}}
+        titleStyle={{color: '#000', fontSize: 20}}
         onPress={props.hideIntro}
       />
     </View>
@@ -145,6 +137,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     zIndex: 0,
+    marginBottom: 50,
   },
   close: {
     position: 'absolute',
