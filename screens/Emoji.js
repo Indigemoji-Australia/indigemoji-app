@@ -23,11 +23,23 @@ export default class IconDetail extends React.Component {
     this.setState({languege: lang});
   }
 
-  onShare(data) {
-    let shareImageBase64 = {
-      url: "file://" + data.file,
+  async onShare(data) {
+    let shareOptions = {
+      url: `data:image/png;base64,${data.data}`,
+      // url: images.image1,
+      type: 'image/png',
+      failOnCancel: false,
+      excludedActivityTypes: [
+        'com.apple.UIKit.activity.SaveToCameraRoll',
+        'com.apple.UIKit.activity.AssignToContact',
+      ],
     };
-    Share.open(shareImageBase64);
+
+    try {
+      await Share.open(shareOptions);
+    } catch (error) {
+      console.warn(error);
+    }
   }
 
   render() {
@@ -36,7 +48,10 @@ export default class IconDetail extends React.Component {
     return (
       <ScrollView>
         <View style={styles.stickerDetail}>
-          <Image source={{uri: emoji.file.replace(".png", "")}} style={styles.stickerImage} />
+          <Image
+            source={{uri: emoji.file.replace('.png', '')}}
+            style={styles.stickerImage}
+          />
           <Text style={styles.stickerName}>
             {this.state.languege === 'en' ? emoji.name : emoji.name_arrernte}
           </Text>
