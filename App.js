@@ -27,11 +27,7 @@ const defaultStackOptions = {
 
 const makeIcon = icon => {
   return ({tintColor}) => (
-    <Image
-      source={icon}
-      resizeMode="center"
-      style={[{tintColor: tintColor}, iconSize]}
-    />
+    <Image source={icon} style={[{tintColor: tintColor}, iconSize]} />
   );
 };
 
