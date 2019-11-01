@@ -5,9 +5,7 @@ import {
   TouchableOpacity,
   Image,
   StyleSheet,
-  ScrollView,
-  Text,
-  SafeArea,
+  FlatList,
   Modal,
   Dimensions,
 } from 'react-native';
@@ -32,7 +30,7 @@ export default class Home extends React.Component {
       const value = await AsyncStorage.getItem('hasOpened');
       if (value === null) {
         this.setState({showIntro: true});
-        await AsyncStorage.setItem('hasOpened', "true")
+        await AsyncStorage.setItem('hasOpened', 'true');
       }
     } catch (e) {
       console.warn(e);
@@ -68,7 +66,7 @@ export default class Home extends React.Component {
     return (
       <Layout navigation={this.props.navigation}>
         <View style={styles.overlayBlock}>
-          <View style={{marginTop: 20, width: '100%'}}>
+          <View style={styles.searchHolder}>
             <TextInput
               placeholder="search"
               value={this.state.searchString}
@@ -76,25 +74,20 @@ export default class Home extends React.Component {
               style={styles.searchField}
             />
           </View>
-          <ScrollView style={{flex: 1}}>
-            <View style={styles.stickerList}>
-              {stickerLibraries.map((item, index) => (
-                <TouchableOpacity
-                  key={index}
-                  onPress={() => this.viewEmoji(item)}>
-                  <Image
-                    source={{uri: item.file.replace(".png", "")}}
-                    indicatorProps={{
-                      size: 50,
-                      color: 'rgba(150, 150, 150, 1)',
-                      unfilledColor: 'rgba(200, 200, 200, 0.2)',
-                    }}
-                    style={styles.sticker}
-                  />
-                </TouchableOpacity>
-              ))}
-            </View>
-          </ScrollView>
+          <FlatList
+            data={stickerLibraries}
+            renderItem={({item}) => (
+              <TouchableOpacity onPress={() => this.viewEmoji(item)}>
+                <Image
+                  source={{uri: item.file.replace('.png', '')}}
+                  style={styles.sticker}
+                />
+              </TouchableOpacity>
+            )}
+            keyExtractor={item => item.file}
+            numColumns={4}
+            style={styles.stickerList}
+          />
         </View>
         <Modal
           animationType="slide"
@@ -106,6 +99,8 @@ export default class Home extends React.Component {
     );
   }
 }
+
+const margin = 30;
 
 const styles = StyleSheet.create({
   searchField: {
@@ -122,20 +117,21 @@ const styles = StyleSheet.create({
   overlayBlock: {
     flex: 1,
     marginTop: 20,
+    paddingBottom: 20,
     backgroundColor: '#fff',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
   sticker: {
-    width: (win.width - 60) / 4 - 10,
-    height: (win.width - 60) / 4 - 10,
-    margin: 5,
+    width: (win.width - margin * 2) / 4,
+    height: (win.width - margin * 2) / 4,
   },
   stickerList: {
-    flexWrap: 'wrap',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    paddingBottom: 30,
-    flex: 1,
+    width: win.width - margin * 2,
+    marginLeft: margin,
+  },
+  searchHolder: {
+    marginTop: 20,
+    width: '100%',
   },
 });
