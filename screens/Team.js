@@ -1,5 +1,14 @@
 import React from 'react';
-import {Dimensions,StyleSheet, Image, SafeAreaView, ScrollView, View} from 'react-native';
+import {
+  TouchableOpacity,
+  Dimensions,
+  StyleSheet,
+  Image,
+  SafeAreaView,
+  ScrollView,
+  View,
+  Linking,
+} from 'react-native';
 import {
   TextBody,
   TextTitle,
@@ -9,7 +18,7 @@ import {
 } from './TextComponents';
 import Layout from './Layout';
 
-const win = Dimensions.get("window");
+const win = Dimensions.get('window');
 
 export default class TeamScreen extends React.Component {
   constructor(props) {
@@ -79,10 +88,53 @@ export default class TeamScreen extends React.Component {
               .
             </TextBody>
             <View>
-              <Image style={styles.logo} source={require('../assets/images/ntglogo.png')} />
-              <Image style={styles.logo} source={require('../assets/images/indigimoblogo.png')} />
-              <Image style={styles.logo} source={require('../assets/images/library.png')} />
-              <Image style={styles.logo} source={require('../assets/images/ingeoussociallogo.png')} />
+              <TouchableOpacity
+                onPress={() => Linking.openURL('https://nt.gov.au/')}>
+                <Image
+                  style={styles.logo}
+                  source={require('../assets/images/ntglogo.png')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => Linking.openURL('https://indigimob.com.au/')}>
+                <Image
+                  style={styles.logo}
+                  source={require('../assets/images/indigimoblogo.png')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(
+                    'http://www.alicesprings.nt.gov.au/services/library',
+                  )
+                }>
+                <Image
+                  style={styles.logo}
+                  source={require('../assets/images/library.jpg')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL('http://www.desertpenguin.com.au/')
+                }>
+                <Image
+                  style={styles.logo}
+                  source={require('../assets/images/penguin.png')}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL('https://www.ingeousstudios.com/')
+                }>
+                <Image
+                  style={styles.logo}
+                  source={require('../assets/images/ingeoussociallogo.png')}
+                />
+              </TouchableOpacity>
+              <Image
+                style={styles.logo}
+                source={require('../assets/images/johnston_foundation.jpg')}
+              />
             </View>
             <View style={{height: 50}}></View>
           </ScrollView>
@@ -96,9 +148,9 @@ const styles = StyleSheet.create({
   logo: {
     width: '100%',
     height: 100,
-    resizeMode: "contain",
+    resizeMode: 'contain',
     flex: 1,
     marginBottom: 20,
     marginTop: 20,
-  }
+  },
 });
