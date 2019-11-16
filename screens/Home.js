@@ -72,6 +72,7 @@ export default class Home extends React.Component {
               value={this.state.searchString}
               onChange={this.onSearchChange}
               style={styles.searchField}
+              clearButtonMode="always"
             />
           </View>
           <FlatList
