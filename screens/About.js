@@ -81,6 +81,12 @@ export default class AboutScreen extends React.Component {
               </Link>
               .
             </TextBody>
+
+            <TextBody>
+              <Link url="https://www.indigemoji.com.au/terms-conditions">
+                View terms and conditions of use.
+              </Link>
+            </TextBody>
             <View style={{height: 50}}></View>
           </ScrollView>
         </TextWrapper>
