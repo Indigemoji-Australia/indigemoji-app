@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, View} from 'react-native';
+import {Text, Modal, SafeAreaView, ScrollView, View} from 'react-native';
 import {
   TextBody,
   TextTitle,
@@ -8,11 +8,23 @@ import {
   TextWrapper,
 } from './TextComponents';
 import Layout from './Layout';
+import Intro from './Intro';
 
 export default class AboutScreen extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      showIntro: false,
+    };
   }
+
+  hideIntro = () => {
+    this.setState({showIntro: false});
+  };
+
+  showIntro = () => {
+    this.setState({showIntro: true});
+  };
 
   render() {
     return (
@@ -59,6 +71,13 @@ export default class AboutScreen extends React.Component {
               young people. We hope you like them!
             </TextBody>
             <TextBody>
+              <Text
+                style={{textDecorationLine: 'underline'}}
+                onPress={this.showIntro}>
+                View the welcome screens.
+              </Text>
+            </TextBody>
+            <TextBody>
               Read the full story on the{' '}
               <Link url="http://www.indigemoji.com.au/">
                 Indigemoji website
@@ -68,6 +87,12 @@ export default class AboutScreen extends React.Component {
             <View style={{height: 50}}></View>
           </ScrollView>
         </TextWrapper>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.showIntro}>
+          <Intro hideIntro={this.hideIntro} />
+        </Modal>
       </Layout>
     );
   }
