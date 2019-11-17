@@ -55,7 +55,7 @@ export default class AboutScreen extends React.Component {
               Geek in Residence program. These digital art workshops ran all
               day, seven days a week, with over 1000 participants from
               Mparntwe/Alice Springs as well as from many remote communities.
-              These young designers were supported by a team of senior
+              The young designers were supported by a team of senior
               Indigenous artists, Digital Mentors and Arrernte linguists to help
               them realise their ideas.
             </TextBody>
