@@ -30,7 +30,7 @@ export default class TeamScreen extends React.Component {
       <Layout navigation={this.props.navigation}>
         <TextWrapper>
           <ScrollView style={{flex: 1}}>
-            <TextTitle>Team</TextTitle>
+            <TextTitle>Anwerne-akerte / Team</TextTitle>
             <TextBody>
               <TextStrong>
                 Arne-nhenhe-areye arrekantherre ileme anwerne-akerte, altyerre,
@@ -41,49 +41,52 @@ export default class TeamScreen extends React.Component {
             </TextBody>
 
             <TextBody>
-              This sticker set represents life, culture and language in Central
-              Australia, the traditional land of the Arrernte people. The images
-              were made by hundreds of young people with senior Arrernte
-              cultural advisors for you to use.
+              This sticker set was designed by hundreds of young people and
+              senior Arrernte cultural advisers during seven weeks of workshops
+              as part of the Alice Springs Public Library’s Geek in Residence
+              program. It is funded by the Northern Territory Government with
+              support from the Alice Springs Town Council.
             </TextBody>
 
             <TextBody>
-              Over 1000 young participants took part in eight weeks of workshops
-              at the Alice Springs Public Library, run by the Geek in Residence
-              program and funded by the Northern Territory Government.{' '}
+              inDigiMOB supported a team of senior artists and digital mentors
+              to work with these young artists to realise their ideas. Leigh
+              Harris and ingeous studios developed this app. We also thank the
+              generous support of the Johnston Foundation.
             </TextBody>
             <TextBody>
-              Indigimob supported a team of senior artists and digital mentors
-              to work with the young people to realise their ideas. Leigh Harris
-              and Ingeous Studios developed this app. We also thank the generous
-              support of the Johnston Foundation.
-            </TextBody>
-            <TextBody>
-              Emoji advisors: Veronica Dobson Perrurle, Kathleen Wallace
+              Emoji advisers: Veronica Dobson Perrurle, Kathleen Wallace
               Kemarre, Joel Liddle Perrurle and Amelia Turner
             </TextBody>
             <TextBody>Producer: Caddie Brain</TextBody>
             <TextBody>
-              Senior artists: Dave Webb, Graham Wilfred, Phillip McCormack, Emma
-              Stubbs, Wyona Palmer, Lindsey Matthews, John Lewis, Benita
-              Clements, Ricky Connick Jakamara, Elizabeth Oolodoodi, Dion
-              Beasley and Elliat Rich
+              Senior artists: Graham Wilfred, Dave Webb, Phillip McCormack, Emma
+              Stubbs, Wyona Palmer, Colleen Powell, Lindsey Matthews, John
+              Lewis, Benita Clements, Ricky Connick Jakamara, Dion Beasley and
+              Elliat Rich
             </TextBody>
             <TextBody>
-              Featured young emoji artists: Chris, Kaylene, Cherina, Vicprsha,
-              Ishmale, Elizabeth, Coulthard, Joyanne, Mia, Megan, Ashley,
-              Jessie, Tjikiti, Lilah, Ellis, Broadie, Shinarah, Astrid, Abraham,
-              Denzel, Tarynt, Sebastian, Kelvin, Ernestine, Dustin, Lucas,
-              Reshanna, Natasha, Mitchell, Vanessa, Alba, Aisha, Felicity
+              Featured young emoji artists: Abraham Lennie, Aisha, Alba, Ashley
+              Marshall, Astrid Keaney, Broadie, Cherina, Chris Jones, Denzel
+              Steel, Dustin, Elizabeth Coulthard, Ellis, Ernestine Mulkatana,
+              Felicity Malbunka, Ishmale, Jasmine Coulthard, Jessie, Joyanne
+              Tilmouth, Kaylene Nelson, Kelvin Campbell, Lilah, Lily Blackman,
+              Lucas Jones, Megan Noall, Mia Satour, Mikara Tilmouth, Mishka
+              Kiessling, Mitchell, Natasha Angus, Onna, Reshanna, Sebastian,
+              Shinarah, Tarynt Stubbs, Tjikiti Liddle, Vanessa and Vicprsha
             </TextBody>
             <TextBody>
               Youth team: Matt D’Penguin, Alice Goddard, Else Kennedy, Pathi Raj
               and Lindsey Matthews
             </TextBody>
             <TextBody>
+              The use of Aboriginal Flag is courtesy of Harold Thomas and WAM
+              Clothing.
+            </TextBody>
+            <TextBody>
               Full credits on the{' '}
               <Link url="http://www.indigemoji.com.au/">
-                Indigemoji website
+                Indigemoji website.
               </Link>
               .
             </TextBody>

@@ -31,7 +31,7 @@ export default class AboutScreen extends React.Component {
       <Layout navigation={this.props.navigation}>
         <TextWrapper>
           <ScrollView style={{flex: 1}}>
-            <TextTitle>About</TextTitle>
+            <TextTitle>Emoji-akerte / About</TextTitle>
             <TextBody>
               <TextStrong>
                 Emoji itne-areye Australia mpwepe-arenye. itne ayeye
@@ -48,27 +48,24 @@ export default class AboutScreen extends React.Component {
             </TextBody>
 
             <TextBody>
-              This emoji sticker set represents life, culture and language in
-              Central Australia. Arrernte is our ancient language, one of many
-              around here, and we’re making emojis to share it online. They were
-              made by young people, artists and cultural advisors. Each emoji
-              has an Arrernte name we hope you’ll learn. We want to use the
-              internet to keep our language strong.
+              This emoji sticker set represents life, culture and language on
+              Arrernte Country in Central Australia. Each design was developed
+              during seven weeks of workshops held at the Alice Springs Public
+              Library over the summer school holidays of 2018 as part of the
+              Geek in Residence program. These digital art workshops ran all
+              day, seven days a week, with over 1000 participants from
+              Mparntwe/Alice Springs as well as from many remote communities.
+              These young designers were supported by a team of senior
+              Indigenous artists, Digital Mentors and Arrernte linguists to help
+              them realise their ideas.
             </TextBody>
 
             <TextBody>
-              The designs were developed through eight weeks of workshops at the
-              Alice Springs Public Library over December 2018 and January 2019
-              as part of the Geek in Residence Program. These digital art
-              workshops ran all day, seven days a week, with over 1000
-              participants from Mparntwe/Alice Springs as well as many remote
-              communities. These young designers were supported by a team of
-              local Indigenous artists and Arrernte linguists to help them
-              realise their ideas. We’re combining one of the world’s most
-              ancient languages with one of the newest and fastest growing
-              languages, emoji. It’s just one way of sharing our culture online
-              and contributing to the decolonisation of the internet for our
-              young people. We hope you like them!
+              Each emoji has an Arrernte name, the ancient language of our
+              place, that we hope you’ll learn. It’s just one way of sharing our
+              culture online and contributing to the decolonisation of the
+              internet for our young people. We hope we can use the internet to
+              keep our language strong.
             </TextBody>
             <TextBody>
               <Text
@@ -78,7 +75,7 @@ export default class AboutScreen extends React.Component {
               </Text>
             </TextBody>
             <TextBody>
-              Read the full story on the{' '}
+              Read more about the emojis on the{' '}
               <Link url="http://www.indigemoji.com.au/">
                 Indigemoji website
               </Link>

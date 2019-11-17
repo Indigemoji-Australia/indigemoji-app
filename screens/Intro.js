@@ -63,8 +63,8 @@ export default Intro = props => (
         style={{zIndex: 0, position: 'absolute'}}>
         <View style={styles.introSlide}>
           <IntroPanel
-            title="indigemoji"
-            subTitle="Emoji itne-areye arrwekele anthurre Australia-kenhe. Tyerretye Arrernte-areye itnenhe mpwareke, Arrernte-kenhe apmerenge."
+            title="Indigemoji"
+            subTitle="Emoji nhenhe-areye arrwekele anthurre Australia-kenhe. Tyerretye Arrernte-areye itnenhe mpwareke, Arrernte-kenhe apmerenge"
             text="Australia’s first set of Indigenous emojis made on Arrernte country in Mparntwe / Alice Springs."
             image={require('../assets/images/start_header.png')}
           />
@@ -82,7 +82,7 @@ export default Intro = props => (
         <View style={styles.introSlide}>
           <IntroPanel
             subTitle="Tyerretye anwerkenhe-arle itnhenhe-areye mpwareke. Arrernte ilyernpenye-areye help-me-ileme angkentye arratye arrerneke."
-            text="These emoji stickers were made by hundreds of young people with senior Arrernte cultural advisors, for you to use."
+            text="These emoji stickers were made by hundreds of young people with senior Arrernte cultural advisers, for you to use."
             image={require('../assets/images/screen2_header.png')}
           />
         </View>
