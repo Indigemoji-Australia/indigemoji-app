@@ -9,6 +9,7 @@ import {
   Modal,
   Dimensions,
 } from 'react-native';
+import {Icon, Text, Button} from 'react-native-elements';
 import AsyncStorage from '@react-native-community/async-storage';
 import Layout from './Layout';
 import Intro from './Intro';
@@ -49,6 +50,11 @@ export default class Home extends React.Component {
     this.setState({showIntro: false});
   };
 
+  clearSearchText = e => {
+    this.setState({searchString: ''});
+    this.refs.search.blur();
+  }
+
   render() {
     let stickerLibraries = this.state.stickers;
     let searchString = this.state.searchString.trim().toLowerCase();
@@ -62,7 +68,7 @@ export default class Home extends React.Component {
         );
       });
     }
-
+  
     return (
       <Layout navigation={this.props.navigation}>
         <View style={styles.overlayBlock}>
@@ -73,6 +79,20 @@ export default class Home extends React.Component {
               onChange={this.onSearchChange}
               style={styles.searchField}
               clearButtonMode="always"
+              ref="search"
+            />
+            <Button
+              icon={
+                <Icon
+                  name="x"
+                  type="feather"
+                  size={30}
+                />
+              }
+              style={styles.clearIcon}
+              type="clear"
+              titleStyle={{color: '#676767', fontSize: 20}}
+              onPress={this.clearSearchText}
             />
           </View>
           <FlatList
@@ -105,15 +125,14 @@ const margin = 30;
 
 const styles = StyleSheet.create({
   searchField: {
-    borderWidth: 1,
-    borderColor: '#000',
-    marginLeft: 30,
-    marginRight: 30,
-    marginBottom: 20,
     padding: 10,
     fontWeight: 'bold',
     fontSize: 18,
     color: '#000',
+    flex: 1
+  },
+  clearIcon: {
+    flex: 1,
   },
   overlayBlock: {
     flex: 1,
@@ -132,7 +151,13 @@ const styles = StyleSheet.create({
     marginLeft: margin,
   },
   searchHolder: {
+    flexDirection: 'row',
     marginTop: 20,
-    width: '100%',
+    marginRight: 30,
+    marginBottom: 20,
+    marginLeft: 30,
+    borderWidth: 1,
+    borderColor: '#000',
+    borderRadius: 2
   },
 });
