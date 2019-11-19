@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   stickerName: {
     textAlign: 'center',
     fontSize: 32,
-    fontWeight: 'bold',
+    fontFamily: 'ArialRoundedBold',
     color: '#000',
     marginBottom: 50,
   },

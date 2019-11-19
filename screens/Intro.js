@@ -117,21 +117,19 @@ const styles = StyleSheet.create({
     color: '#fff',
     marginBottom: 15,
     fontSize: 40,
-    fontWeight: 'bold',
-    // fontFamily: 'arial-rounded-bold',
+    fontFamily: 'ArialRoundedBold',
   },
   subTitle: {
     color: '#000',
     marginBottom: 15,
     fontSize: 20,
-    fontWeight: 'bold',
-    // fontFamily: 'arial-rounded-bold'
+    fontFamily: 'ArialRoundedBold',
   },
   text: {
     color: '#fff',
     marginBottom: 15,
     fontSize: 20,
-    // fontFamily: 'arial-rounded-bold',
+    fontFamily: 'OpenSans-Regular',
   },
   introSlide: {
     flex: 1,
@@ -145,5 +143,6 @@ const styles = StyleSheet.create({
     right: 20,
     zIndex: 999,
     backgroundColor: '#fab923',
+    fontFamily: 'OpenSans-Regular',
   },
 });

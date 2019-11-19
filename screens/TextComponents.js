@@ -21,15 +21,20 @@ const margin = 10;
 
 const styles = StyleSheet.create({
   title: {
+    fontFamily: 'ArialRoundedBold',
     fontSize: 30,
-    fontWeight: 'bold',
     marginTop: margin,
     marginBottom: margin,
   },
-  body: {fontSize: 15, marginBottom: margin, marginTop: margin},
-  strong: {
+  body: {
+    fontFamily: 'OpenSans-Regular',
     fontSize: 15,
-    fontWeight: 'bold',
+    marginBottom: margin,
+    marginTop: margin
+  },
+  strong: {
+    fontFamily: 'OpenSans-Bold',
+    fontSize: 15,
     marginBottom: margin,
     marginTop: margin,
   },
