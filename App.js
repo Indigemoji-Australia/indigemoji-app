@@ -37,7 +37,7 @@ const HomeStack = createStackNavigator(
     EmojiDetails: {
       screen: EmojiScreen,
       navigationOptions: {
-        headerStyle: {height: 30},
+        headerStyle: {height: 50},
       },
     },
   },
