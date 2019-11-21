@@ -1,5 +1,12 @@
 import React from 'react';
-import {Linking, Text, StyleSheet, TouchableOpacity, View} from 'react-native';
+import {
+  Linking,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+  Platform
+} from 'react-native';
 
 const TextBody = props => <Text style={styles.body}>{props.children}</Text>;
 
@@ -21,7 +28,7 @@ const margin = 10;
 
 const styles = StyleSheet.create({
   title: {
-    fontFamily: 'ArialRoundedBold',
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
     fontSize: 30,
     marginTop: margin,
     marginBottom: margin,

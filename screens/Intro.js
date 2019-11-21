@@ -9,6 +9,7 @@ import {
   StatusBar,
   SafeArea,
   Dimensions,
+  Platform
 } from 'react-native';
 import {Icon, Button} from 'react-native-elements';
 import SafeAreaView from 'react-native-safe-area-view';
@@ -117,13 +118,13 @@ const styles = StyleSheet.create({
     color: '#fff',
     marginBottom: 15,
     fontSize: 40,
-    fontFamily: 'ArialRoundedBold',
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
   },
   subTitle: {
     color: '#000',
     marginBottom: 15,
     fontSize: 20,
-    fontFamily: 'ArialRoundedBold',
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
   },
   text: {
     color: '#fff',

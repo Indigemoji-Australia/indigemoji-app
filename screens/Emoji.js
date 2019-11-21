@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Dimensions,
   Image,
+  Platform,
 } from 'react-native';
 import {Icon, Text, Button} from 'react-native-elements';
 import Share from 'react-native-share';
@@ -152,7 +153,7 @@ const styles = StyleSheet.create({
   stickerName: {
     textAlign: 'center',
     fontSize: 32,
-    fontFamily: 'ArialRoundedBold',
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
     color: '#000',
     marginBottom: 50,
   },

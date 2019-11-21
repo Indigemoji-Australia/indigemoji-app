@@ -8,6 +8,7 @@ import {
   FlatList,
   Modal,
   Dimensions,
+  Platform,
 } from 'react-native';
 import {Icon, Text, Button} from 'react-native-elements';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -133,6 +134,7 @@ const styles = StyleSheet.create({
   },
   clearIcon: {
     flex: 1,
+    display: Platform.OS === 'ios' ? 'none' : 'flex'
   },
   overlayBlock: {
     flex: 1,
