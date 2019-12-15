@@ -96,6 +96,13 @@ export default Intro = props => (
             image={require('../assets/images/screen3_header.png')}
           />
         </View>
+        <View style={styles.introSlide}>
+          <IntroPanel
+            title="Awaye!"
+            text="Want to learn how to pronounce the Arrernte emojis? Visit the Indigemoji website to listen!"
+            image={require('../assets/images/screen5_header.png')}
+          />
+        </View>
       </Swiper>
     </View>
   </ImageBackground>
