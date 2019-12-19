@@ -137,7 +137,7 @@ android {
         applicationId "com.indigemoji"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
+        versionCode 7
         versionName "1.1"
     }
     splits {
@@ -156,6 +156,10 @@ android {
             keyPassword 'android'
         }
         release {
+            storeFile file('/Users/michela/Documents/my-upload-key.keystore')
+            storePassword 'my-upload-key.keystore'
+            keyPassword 'my-upload-key.keystore'
+            keyAlias = 'my-upload-key.keystore'
             if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
                 storeFile file(MYAPP_UPLOAD_STORE_FILE)
                 storePassword MYAPP_UPLOAD_STORE_PASSWORD
