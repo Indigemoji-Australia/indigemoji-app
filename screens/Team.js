@@ -101,7 +101,7 @@ export default class TeamScreen extends React.Component {
               <TouchableOpacity
                 onPress={() => Linking.openURL('https://indigimob.com.au/')}>
                 <Image
-                  style={styles.logo}
+                  style={styles.logo_taller}
                   source={require('../assets/images/indigimoblogo.png')}
                 />
               </TouchableOpacity>
@@ -151,6 +151,14 @@ const styles = StyleSheet.create({
   logo: {
     width: '100%',
     height: 100,
+    resizeMode: 'contain',
+    flex: 1,
+    marginBottom: 20,
+    marginTop: 20,
+  },
+  logo_taller: {
+    width: '100%',
+    height: 150,
     resizeMode: 'contain',
     flex: 1,
     marginBottom: 20,
