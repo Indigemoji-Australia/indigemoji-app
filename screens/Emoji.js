@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {Icon, Text, Button} from 'react-native-elements';
 import Share from 'react-native-share';
+import Sound from 'react-native-sound';
 const win = Dimensions.get('window');
 
 export default class IconDetail extends React.Component {
@@ -17,11 +18,26 @@ export default class IconDetail extends React.Component {
     super(props);
     this.state = {
       languege: 'ar',
+      audioPlaying: false,
     };
   }
 
+  playSound(soundToPlay){
+    this.setState({languege: this.state.languege, audioPlaying: true});
+    const sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        // do something?
+      }
+      // play when loaded
+      sound.play(() => {
+        sound.release();
+        this.setState({languege: this.state.languege, audioPlaying: false});
+      });
+    });
+  }
+
   changeLanguage(lang) {
-    this.setState({languege: lang});
+    this.setState({languege: lang, audioPlaying: this.state.audioPlaying});
   }
 
   async onShare(data) {
@@ -102,6 +118,17 @@ export default class IconDetail extends React.Component {
               onPress={() => this.onShare(emoji)}
             />
           </View>
+          <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.test_variable)}>
+            { this.state.audioPlaying == false
+              ?
+              <Image source={require('../assets/images/audio-off.png')} />
+              :
+              <Image source={require('../assets/images/audio-on.png')} />
+            }
+            <Text style={styles.playButtonText}>
+              play
+			      </Text>
+           </TouchableOpacity>
         </View>
       </ScrollView>
     );
@@ -157,4 +184,13 @@ const styles = StyleSheet.create({
     color: '#000',
     marginBottom: 50,
   },
+  playButton: {
+    display: "flex", 
+    flexDirection: "row", 
+  },
+  playButtonText: {
+    marginLeft: 5,
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMT' : 'ArialRounded',
+    fontSize: 18
+  }
 });
