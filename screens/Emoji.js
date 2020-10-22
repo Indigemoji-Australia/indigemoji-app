@@ -24,9 +24,12 @@ export default class IconDetail extends React.Component {
 
   playSound(soundToPlay){
     this.setState({languege: this.state.languege, audioPlaying: true});
+
     const sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
       if (error) {
         // do something?
+        alert(error.message);
+        alert(soundToPlay);
       }
       // play when loaded
       sound.play(() => {
@@ -61,7 +64,6 @@ export default class IconDetail extends React.Component {
 
   render() {
     let emoji = this.props.navigation.getParam('data');
-
     return (
       <ScrollView>
         <View style={styles.stickerDetail}>
@@ -118,7 +120,9 @@ export default class IconDetail extends React.Component {
               onPress={() => this.onShare(emoji)}
             />
           </View>
-          <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.test_variable)}>
+          { emoji.audio_file
+          ?
+          <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.audio_file)}>
             { this.state.audioPlaying == false
               ?
               <Image source={require('../assets/images/audio-off.png')} />
@@ -129,6 +133,9 @@ export default class IconDetail extends React.Component {
               play
 			      </Text>
            </TouchableOpacity>
+           : 
+           <Text></Text>
+           }
         </View>
       </ScrollView>
     );
