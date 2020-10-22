@@ -120,6 +120,8 @@ export default class IconDetail extends React.Component {
               onPress={() => this.onShare(emoji)}
             />
           </View>
+          { emoji.audio_file
+          ?
           <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.audio_file)}>
             { this.state.audioPlaying == false
               ?
@@ -131,6 +133,9 @@ export default class IconDetail extends React.Component {
               play
 			      </Text>
            </TouchableOpacity>
+           : 
+           <Text></Text>
+           }
         </View>
       </ScrollView>
     );
