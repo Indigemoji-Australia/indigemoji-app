@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
   },
   playButtonText: {
     marginLeft: 5,
-    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMT' : 'ArialRounded',
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRounded',
     fontSize: 18
   }
 });
