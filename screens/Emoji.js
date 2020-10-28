@@ -18,7 +18,7 @@ export default class IconDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      languege: 'ar',
+      language: 'ar',
       audioPlaying: false,
     };
   }
@@ -33,10 +33,10 @@ export default class IconDetail extends React.Component {
       this.sound.stop();
       this.sound.release();
       this.sound = undefined;
-      this.setState({ languege: this.state.languege, audioPlaying: false });
+      this.setState({ language: this.state.language, audioPlaying: false });
     }
     else {
-      this.setState({ languege: this.state.languege, audioPlaying: true });
+      this.setState({ language: this.state.language, audioPlaying: true });
 
       this.sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
         if (error) {
@@ -47,7 +47,7 @@ export default class IconDetail extends React.Component {
         // play when loaded
         this.sound.play(() => {
           this.sound.release();
-          this.setState({ languege: this.state.languege, audioPlaying: false });
+          this.setState({ language: this.state.language, audioPlaying: false });
           this.sound = undefined;
         });
       });
@@ -55,7 +55,7 @@ export default class IconDetail extends React.Component {
   }
 
   changeLanguage(lang) {
-    this.setState({ languege: lang, audioPlaying: this.state.audioPlaying });
+    this.setState({ language: lang, audioPlaying: this.state.audioPlaying });
   }
 
   async onShare(data) {
@@ -87,13 +87,13 @@ export default class IconDetail extends React.Component {
             style={styles.stickerImage}
           />
           <Text style={styles.stickerName}>
-            {this.state.languege === 'en' ? emoji.name : emoji.name_arrernte}
+            {this.state.language === 'en' ? emoji.name : emoji.name_arrernte}
           </Text>
           <View style={styles.buttonGroup}>
             <TouchableOpacity onPress={() => this.changeLanguage('ar')}>
               <Text
                 style={
-                  this.state.languege === 'ar'
+                  this.state.language === 'ar'
                     ? styles.buttonPress
                     : styles.button
                 }>
@@ -103,7 +103,7 @@ export default class IconDetail extends React.Component {
             <TouchableOpacity onPress={() => this.changeLanguage('en')}>
               <Text
                 style={
-                  this.state.languege === 'en'
+                  this.state.language === 'en'
                     ? styles.buttonPress
                     : styles.button
                 }>
@@ -222,10 +222,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   playButtonText: {
+    fontWeight: "500",
     marginRight: 12,
-    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
-    fontSize: 18,
-    color: '#676767'
+    fontSize: 20,
+    color: '#676767',
   },
   playButtonIcon: {
     marginRight: 8,
