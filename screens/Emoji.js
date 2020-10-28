@@ -222,12 +222,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   playButtonText: {
-    marginRight: 10,
+    marginRight: 12,
     fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
     fontSize: 18,
     color: '#676767'
   },
   playButtonIcon: {
-    marginRight: 10,
+    marginRight: 8,
   }
 });
