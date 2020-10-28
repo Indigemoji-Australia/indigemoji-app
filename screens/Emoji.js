@@ -23,26 +23,36 @@ export default class IconDetail extends React.Component {
     };
   }
 
-  // All sound filenames must be in lowercase.
+  // All sound filenames must be in lowercase with no spaces.
   // Sound files must be in the following places:
   // Android: Save your sound clip files under the directory android/app/src/main/res/raw. Note that files in this directory must be lowercase and underscored (e.g. my_file_name.mp3) and that subdirectories are not supported by Android.
   // iOS: Open Xcode and add your sound files to the project (Right-click the project and select Add Files to [PROJECTNAME])
   // We may want to make an automation tool for doing both of the above at some point.
   playSound(soundToPlay){
-    this.setState({languege: this.state.languege, audioPlaying: true});
+    if(this.sound)
+    {
+      this.sound.stop();
+      this.sound.release();
+      this.sound = undefined;
+      this.setState({languege: this.state.languege, audioPlaying: false});
+    }
+    else {
+      this.setState({languege: this.state.languege, audioPlaying: true});
 
-    const sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
-      if (error) {
-        // do something?
-        alert(error.message);
-        alert(soundToPlay);
-      }
-      // play when loaded
-      sound.play(() => {
-        sound.release();
-        this.setState({languege: this.state.languege, audioPlaying: false});
+      this.sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
+        if (error) {
+          // do something?
+          alert(error.message);
+          alert(soundToPlay);
+        }
+        // play when loaded
+        this.sound.play(() => {
+          this.sound.release();
+          this.setState({languege: this.state.languege, audioPlaying: false});
+          this.sound = undefined;
+        });
       });
-    });
+    }
   }
 
   changeLanguage(lang) {
@@ -203,7 +213,8 @@ const styles = StyleSheet.create({
   },
   playButtonText: {
     marginLeft: 5,
-    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRounded',
-    fontSize: 18
+    fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
+    fontSize: 18,
+    color: '#676767'
   }
 });
