@@ -8,7 +8,7 @@ import {
   Image,
   Platform,
 } from 'react-native';
-import {Icon, Text, Button} from 'react-native-elements';
+import { Icon, Text, Button } from 'react-native-elements';
 import Share from 'react-native-share';
 // To install, run "npm install react-native-sound" then "react-native link react-native-sound"
 import Sound from 'react-native-sound';
@@ -28,16 +28,15 @@ export default class IconDetail extends React.Component {
   // Android: Save your sound clip files under the directory android/app/src/main/res/raw. Note that files in this directory must be lowercase and underscored (e.g. my_file_name.mp3) and that subdirectories are not supported by Android.
   // iOS: Open Xcode and add your sound files to the project (Right-click the project and select Add Files to [PROJECTNAME])
   // We may want to make an automation tool for doing both of the above at some point.
-  playSound(soundToPlay){
-    if(this.sound)
-    {
+  playSound(soundToPlay) {
+    if (this.sound) {
       this.sound.stop();
       this.sound.release();
       this.sound = undefined;
-      this.setState({languege: this.state.languege, audioPlaying: false});
+      this.setState({ languege: this.state.languege, audioPlaying: false });
     }
     else {
-      this.setState({languege: this.state.languege, audioPlaying: true});
+      this.setState({ languege: this.state.languege, audioPlaying: true });
 
       this.sound = new Sound(soundToPlay, Sound.MAIN_BUNDLE, (error) => {
         if (error) {
@@ -48,7 +47,7 @@ export default class IconDetail extends React.Component {
         // play when loaded
         this.sound.play(() => {
           this.sound.release();
-          this.setState({languege: this.state.languege, audioPlaying: false});
+          this.setState({ languege: this.state.languege, audioPlaying: false });
           this.sound = undefined;
         });
       });
@@ -56,7 +55,7 @@ export default class IconDetail extends React.Component {
   }
 
   changeLanguage(lang) {
-    this.setState({languege: lang, audioPlaying: this.state.audioPlaying});
+    this.setState({ languege: lang, audioPlaying: this.state.audioPlaying });
   }
 
   async onShare(data) {
@@ -84,7 +83,7 @@ export default class IconDetail extends React.Component {
       <ScrollView>
         <View style={styles.stickerDetail}>
           <Image
-            source={{uri: emoji.file.replace('.png', '')}}
+            source={{ uri: emoji.file.replace('.png', '') }}
             style={styles.stickerImage}
           />
           <Text style={styles.stickerName}>
@@ -112,46 +111,57 @@ export default class IconDetail extends React.Component {
               </Text>
             </TouchableOpacity>
           </View>
-          <View
+
+          <View 
             style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              marginTop: 10,
-              marginBottom: 20,
-            }}>
-            <Button
-              icon={
-                <Icon
-                  name="copy"
-                  type="feather"
-                  size={30}
-                  color="#676767"
-                  iconStyle={{marginRight: 5}}
-                />
-              }
-              title="share"
-              type="clear"
-              titleStyle={{color: '#676767', fontSize: 20}}
-              onPress={() => this.onShare(emoji)}
-            />
-          </View>
-          { emoji.audio
-          ?
-          <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.audio)}>
-            { this.state.audioPlaying == false
+                display:"flex",
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginTop: 10,
+                marginBottom: 20,
+              }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginTop: 10,
+                marginBottom: 20,
+              }}>
+              <Button
+                icon={
+                  <Icon
+                    name="copy"
+                    type="feather"
+                    size={30}
+                    color="#676767"
+                    iconStyle={{ marginRight: 5 }}
+                  />
+                }
+                title="share"
+                type="clear"
+                titleStyle={{ color: '#676767', fontSize: 20 }}
+                onPress={() => this.onShare(emoji)}
+              />
+            </View>
+            {emoji.audio
               ?
-              <Image source={require('../assets/images/audio-off.png')} />
+              <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.audio)}>
+                {this.state.audioPlaying == false
+                  ?
+                  <Image style={styles.playButtonIcon} source={require('../assets/images/audio-off.png')} />
+                  :
+                  <Image style={styles.playButtonIcon} source={require('../assets/images/audio-on.png')} />
+                }
+                <Text style={styles.playButtonText}>
+                  play
+			        </Text>
+              </TouchableOpacity>
               :
-              <Image source={require('../assets/images/audio-on.png')} />
+              <Text></Text>
             }
-            <Text style={styles.playButtonText}>
-              play
-			      </Text>
-           </TouchableOpacity>
-           : 
-           <Text></Text>
-           }
+          </View>
         </View>
       </ScrollView>
     );
@@ -208,13 +218,16 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   playButton: {
-    display: "flex", 
-    flexDirection: "row", 
+    display: "flex",
+    flexDirection: "row",
   },
   playButtonText: {
-    marginLeft: 5,
+    marginRight: 10,
     fontFamily: Platform.OS === 'ios' ? 'ArialRoundedMTBold' : 'ArialRoundedBold',
     fontSize: 18,
     color: '#676767'
+  },
+  playButtonIcon: {
+    marginRight: 10,
   }
 });
