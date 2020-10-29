@@ -141,11 +141,15 @@ export default class IconDetail extends React.Component {
                 }
                 title="share"
                 type="clear"
-                titleStyle={{ color: '#676767', fontSize: 20 }}
+                titleStyle={{ 
+                  fontFamily: 'Feather',
+                  color: '#676767', 
+                  fontSize: 20 
+                }}
                 onPress={() => this.onShare(emoji)}
               />
             </View>
-            {emoji.audio
+            {emoji.audio != undefined
               ?
               <TouchableOpacity style={styles.playButton} onPress={() => this.playSound(emoji.audio)}>
                 {this.state.audioPlaying == false
@@ -222,12 +226,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   playButtonText: {
-    fontWeight: "500",
+    fontFamily: 'Feather',
     marginRight: 12,
     fontSize: 20,
     color: '#676767',
   },
   playButtonIcon: {
     marginRight: 8,
+    width:30,
+    height:30,
   }
 });
