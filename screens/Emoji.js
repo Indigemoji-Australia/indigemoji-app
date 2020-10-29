@@ -233,5 +233,7 @@ const styles = StyleSheet.create({
   },
   playButtonIcon: {
     marginRight: 8,
+    width:30,
+    height:30,
   }
 });
