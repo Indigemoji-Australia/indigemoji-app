@@ -84,6 +84,9 @@ export default class TeamScreen extends React.Component {
               Clothing.
             </TextBody>
             <TextBody>
+              Audio: Joel Liddle Perrurle, Veronica Dobson Perrurle, Kathleen Wallace Kemarre and the Year 9 students at the Alice Springs Language Centre/Centralian Middle School: Ada Watson, Johnien Furber, Tyrell Martin, Shakira Richards, Lawrence Squires, Shalaylee Coombes, Shonneille Craig, Jenaya Newchurch, Wendelle Miller Kruger. With thanks to David Moore and Jannette McCormack.
+            </TextBody>
+            <TextBody>
               Full credits on the{' '}
               <Link url="http://www.indigemoji.com.au/">
                 Indigemoji website.

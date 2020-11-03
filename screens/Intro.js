@@ -99,7 +99,7 @@ export default Intro = props => (
         <View style={styles.introSlide}>
           <IntroPanel
             title="Awaye!"
-            text="Want to learn how to pronounce the Arrernte emojis? Visit the Indigemoji website to listen!"
+            text="New audio! Press the play button to learn to pronounce the Arrernte emojis!"
             image={require('../assets/images/screen5_header.png')}
           />
         </View>
