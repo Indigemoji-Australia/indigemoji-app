@@ -21,6 +21,7 @@
 		5CC742F489161337DF778BDA /* libPods-indigemoji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D67FEA7AF74310BAEFCB08 /* libPods-indigemoji.a */; };
 		87D0FE08EE97169623FA4770 /* libPods-indigemoji-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF9C30C22B9D35E57E2F7FC /* libPods-indigemoji-tvOSTests.a */; };
 		9281F4EABA8E6DF698BE83F0 /* libPods-indigemoji-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0EDA58B3A025743A8A8DAA /* libPods-indigemoji-tvOS.a */; };
+		D0247E8D2558A22F0002F5B2 /* ahelheanthirtneme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0247E8C2558A22F0002F5B2 /* ahelheanthirtneme.mp3 */; };
 		D028F35D254826A8001552CA /* aherreimpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F30A254826A4001552CA /* aherreimpatye.mp3 */; };
 		D028F35E254826A8001552CA /* aherreimpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F30A254826A4001552CA /* aherreimpatye.mp3 */; };
 		D028F35F254826A8001552CA /* aherreimpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F30A254826A4001552CA /* aherreimpatye.mp3 */; };
@@ -470,6 +471,7 @@
 		C3DFB1FD987B96F6A5716BE4 /* Pods-indigemoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-indigemoji.debug.xcconfig"; path = "Target Support Files/Pods-indigemoji/Pods-indigemoji.debug.xcconfig"; sourceTree = "<group>"; };
 		C85CDCD1486180009CF29E7C /* Pods-indigemoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-indigemoji.release.xcconfig"; path = "Target Support Files/Pods-indigemoji/Pods-indigemoji.release.xcconfig"; sourceTree = "<group>"; };
 		CF030171F9AB4A9EA1AF6A5E /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		D0247E8C2558A22F0002F5B2 /* ahelheanthirtneme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ahelheanthirtneme.mp3; path = ../assets/audio/ahelheanthirtneme.mp3; sourceTree = "<group>"; };
 		D028F30A254826A4001552CA /* aherreimpatye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = aherreimpatye.mp3; path = ../assets/audio/aherreimpatye.mp3; sourceTree = "<group>"; };
 		D028F30B254826A4001552CA /* urtakerte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = urtakerte.mp3; path = ../assets/audio/urtakerte.mp3; sourceTree = "<group>"; };
 		D028F30C254826A4001552CA /* kereakange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kereakange.mp3; path = ../assets/audio/kereakange.mp3; sourceTree = "<group>"; };
@@ -687,6 +689,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D0247E8C2558A22F0002F5B2 /* ahelheanthirtneme.mp3 */,
 				D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */,
 				D028F4B425551E6D001552CA /* altharte.mp3 */,
 				D028F4AF25551E6C001552CA /* apmwe.mp3 */,
@@ -1145,6 +1148,7 @@
 				D028F44D254826A8001552CA /* aherte.mp3 in Resources */,
 				D069991B238619D800B39A22 /* ArialRoundedBold.ttf in Resources */,
 				D028F389254826A8001552CA /* arrangkwe.mp3 in Resources */,
+				D0247E8D2558A22F0002F5B2 /* ahelheanthirtneme.mp3 in Resources */,
 				D028F409254826A8001552CA /* arelhe.mp3 in Resources */,
 				D028F401254826A8001552CA /* akngwelye.mp3 in Resources */,
 				D028F3B1254826A8001552CA /* atyunpe.mp3 in Resources */,
