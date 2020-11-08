@@ -269,10 +269,6 @@
 		D028F452254826A8001552CA /* alye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F347254826A7001552CA /* alye.mp3 */; };
 		D028F453254826A8001552CA /* alye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F347254826A7001552CA /* alye.mp3 */; };
 		D028F454254826A8001552CA /* alye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F347254826A7001552CA /* alye.mp3 */; };
-		D028F455254826A8001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F348254826A7001552CA /* atnerteurrperle.mp3 */; };
-		D028F456254826A8001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F348254826A7001552CA /* atnerteurrperle.mp3 */; };
-		D028F457254826A8001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F348254826A7001552CA /* atnerteurrperle.mp3 */; };
-		D028F458254826A8001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F348254826A7001552CA /* atnerteurrperle.mp3 */; };
 		D028F459254826A8001552CA /* pmerlpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F349254826A7001552CA /* pmerlpe.mp3 */; };
 		D028F45A254826A8001552CA /* pmerlpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F349254826A7001552CA /* pmerlpe.mp3 */; };
 		D028F45B254826A8001552CA /* pmerlpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F349254826A7001552CA /* pmerlpe.mp3 */; };
@@ -353,6 +349,36 @@
 		D028F4A6254826A8001552CA /* arrangkwecopy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F35C254826A8001552CA /* arrangkwecopy.mp3 */; };
 		D028F4A7254826A8001552CA /* arrangkwecopy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F35C254826A8001552CA /* arrangkwecopy.mp3 */; };
 		D028F4A8254826A8001552CA /* arrangkwecopy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F35C254826A8001552CA /* arrangkwecopy.mp3 */; };
+		D028F4B525551E6D001552CA /* apmwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4AF25551E6C001552CA /* apmwe.mp3 */; };
+		D028F4B625551E6D001552CA /* apmwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4AF25551E6C001552CA /* apmwe.mp3 */; };
+		D028F4B725551E6D001552CA /* apmwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4AF25551E6C001552CA /* apmwe.mp3 */; };
+		D028F4B825551E6D001552CA /* apmwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4AF25551E6C001552CA /* apmwe.mp3 */; };
+		D028F4B925551E6D001552CA /* apmwe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4AF25551E6C001552CA /* apmwe.mp3 */; };
+		D028F4BA25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */; };
+		D028F4BB25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */; };
+		D028F4BC25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */; };
+		D028F4BD25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */; };
+		D028F4BE25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */; };
+		D028F4BF25551E6D001552CA /* atyelpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B125551E6C001552CA /* atyelpe.mp3 */; };
+		D028F4C025551E6D001552CA /* atyelpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B125551E6C001552CA /* atyelpe.mp3 */; };
+		D028F4C125551E6D001552CA /* atyelpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B125551E6C001552CA /* atyelpe.mp3 */; };
+		D028F4C225551E6D001552CA /* atyelpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B125551E6C001552CA /* atyelpe.mp3 */; };
+		D028F4C325551E6D001552CA /* atyelpe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B125551E6C001552CA /* atyelpe.mp3 */; };
+		D028F4C425551E6D001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */; };
+		D028F4C525551E6D001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */; };
+		D028F4C625551E6D001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */; };
+		D028F4C725551E6D001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */; };
+		D028F4C825551E6D001552CA /* atnerteurrperle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */; };
+		D028F4C925551E6D001552CA /* arlpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B325551E6C001552CA /* arlpatye.mp3 */; };
+		D028F4CA25551E6D001552CA /* arlpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B325551E6C001552CA /* arlpatye.mp3 */; };
+		D028F4CB25551E6D001552CA /* arlpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B325551E6C001552CA /* arlpatye.mp3 */; };
+		D028F4CC25551E6D001552CA /* arlpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B325551E6C001552CA /* arlpatye.mp3 */; };
+		D028F4CD25551E6D001552CA /* arlpatye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B325551E6C001552CA /* arlpatye.mp3 */; };
+		D028F4CE25551E6D001552CA /* altharte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B425551E6D001552CA /* altharte.mp3 */; };
+		D028F4CF25551E6D001552CA /* altharte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B425551E6D001552CA /* altharte.mp3 */; };
+		D028F4D025551E6D001552CA /* altharte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B425551E6D001552CA /* altharte.mp3 */; };
+		D028F4D125551E6D001552CA /* altharte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B425551E6D001552CA /* altharte.mp3 */; };
+		D028F4D225551E6D001552CA /* altharte.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D028F4B425551E6D001552CA /* altharte.mp3 */; };
 		D069991B238619D800B39A22 /* ArialRoundedBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E095A713C96841DE9DCA209F /* ArialRoundedBold.ttf */; };
 		D069991C238619E400B39A22 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5F8D13B1ABE4494A0EE8D33 /* OpenSans-Regular.ttf */; };
 		D069991D238619ED00B39A22 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 021A373559884039BE510809 /* OpenSans-Bold.ttf */; };
@@ -506,7 +532,6 @@
 		D028F345254826A7001552CA /* ure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ure.mp3; path = ../assets/audio/ure.mp3; sourceTree = "<group>"; };
 		D028F346254826A7001552CA /* aherte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = aherte.mp3; path = ../assets/audio/aherte.mp3; sourceTree = "<group>"; };
 		D028F347254826A7001552CA /* alye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alye.mp3; path = ../assets/audio/alye.mp3; sourceTree = "<group>"; };
-		D028F348254826A7001552CA /* atnerteurrperle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = atnerteurrperle.mp3; path = ../assets/audio/atnerteurrperle.mp3; sourceTree = "<group>"; };
 		D028F349254826A7001552CA /* pmerlpe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pmerlpe.mp3; path = ../assets/audio/pmerlpe.mp3; sourceTree = "<group>"; };
 		D028F34A254826A7001552CA /* ingkwelpe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ingkwelpe.mp3; path = ../assets/audio/ingkwelpe.mp3; sourceTree = "<group>"; };
 		D028F34B254826A7001552CA /* antenhe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = antenhe.mp3; path = ../assets/audio/antenhe.mp3; sourceTree = "<group>"; };
@@ -527,6 +552,12 @@
 		D028F35A254826A8001552CA /* iltye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = iltye.mp3; path = ../assets/audio/iltye.mp3; sourceTree = "<group>"; };
 		D028F35B254826A8001552CA /* amiwarre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = amiwarre.mp3; path = ../assets/audio/amiwarre.mp3; sourceTree = "<group>"; };
 		D028F35C254826A8001552CA /* arrangkwecopy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = arrangkwecopy.mp3; path = ../assets/audio/arrangkwecopy.mp3; sourceTree = "<group>"; };
+		D028F4AF25551E6C001552CA /* apmwe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = apmwe.mp3; path = ../assets/audio/apmwe.mp3; sourceTree = "<group>"; };
+		D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = akngwelyeirrpelthe.mp3; path = ../assets/audio/akngwelyeirrpelthe.mp3; sourceTree = "<group>"; };
+		D028F4B125551E6C001552CA /* atyelpe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = atyelpe.mp3; path = ../assets/audio/atyelpe.mp3; sourceTree = "<group>"; };
+		D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = atnerteurrperle.mp3; path = ../assets/audio/atnerteurrperle.mp3; sourceTree = "<group>"; };
+		D028F4B325551E6C001552CA /* arlpatye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = arlpatye.mp3; path = ../assets/audio/arlpatye.mp3; sourceTree = "<group>"; };
+		D028F4B425551E6D001552CA /* altharte.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = altharte.mp3; path = ../assets/audio/altharte.mp3; sourceTree = "<group>"; };
 		E095A713C96841DE9DCA209F /* ArialRoundedBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = ArialRoundedBold.ttf; path = ../assets/fonts/ArialRoundedBold.ttf; sourceTree = "<group>"; };
 		E54E539C9C064207B5A47A9D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		E9A18E2637ED4C7F9096B44C /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
@@ -656,6 +687,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D028F4B025551E6C001552CA /* akngwelyeirrpelthe.mp3 */,
+				D028F4B425551E6D001552CA /* altharte.mp3 */,
+				D028F4AF25551E6C001552CA /* apmwe.mp3 */,
+				D028F4B325551E6C001552CA /* arlpatye.mp3 */,
+				D028F4B225551E6C001552CA /* atnerteurrperle.mp3 */,
+				D028F4B125551E6C001552CA /* atyelpe.mp3 */,
 				D028F351254826A7001552CA /* ahakngerre.mp3 */,
 				D028F343254826A7001552CA /* ahelheantheme.mp3 */,
 				D028F32D254826A6001552CA /* ahelheanthetyeme.mp3 */,
@@ -696,7 +733,6 @@
 				D028F30D254826A4001552CA /* arrpwere.mp3 */,
 				D028F32C254826A6001552CA /* artwe.mp3 */,
 				D028F314254826A5001552CA /* arwempe.mp3 */,
-				D028F348254826A7001552CA /* atnerteurrperle.mp3 */,
 				D028F31F254826A5001552CA /* atyunpe.mp3 */,
 				D028F354254826A7001552CA /* aweleawele.mp3 */,
 				D028F33C254826A6001552CA /* ilentye.mp3 */,
@@ -957,6 +993,7 @@
 			files = (
 				D028F462254826A8001552CA /* antenhe.mp3 in Resources */,
 				D028F3D2254826A8001552CA /* rlkerte.mp3 in Resources */,
+				D028F4BB25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */,
 				D028F416254826A8001552CA /* alhwarrpe.mp3 in Resources */,
 				D028F44E254826A8001552CA /* aherte.mp3 in Resources */,
 				D028F436254826A8001552CA /* intelhentye.mp3 in Resources */,
@@ -966,7 +1003,6 @@
 				D028F432254826A8001552CA /* arrarlkwe.mp3 in Resources */,
 				D028F48A254826A8001552CA /* yalke.mp3 in Resources */,
 				D028F422254826A8001552CA /* apmere.mp3 in Resources */,
-				D028F456254826A8001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F426254826A8001552CA /* ilentye.mp3 in Resources */,
 				D028F44A254826A8001552CA /* ure.mp3 in Resources */,
 				D028F3A6254826A8001552CA /* akangkeme.mp3 in Resources */,
@@ -979,8 +1015,10 @@
 				D028F41E254826A8001552CA /* antirrkeme.mp3 in Resources */,
 				D028F396254826A8001552CA /* arerte.mp3 in Resources */,
 				D028F38A254826A8001552CA /* arrangkwe.mp3 in Resources */,
+				D028F4B625551E6D001552CA /* apmwe.mp3 in Resources */,
 				D028F40A254826A8001552CA /* arelhe.mp3 in Resources */,
 				D028F46E254826A8001552CA /* alkwerte.mp3 in Resources */,
+				D028F4C525551E6D001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F402254826A8001552CA /* akngwelye.mp3 in Resources */,
 				D028F36E254826A8001552CA /* impatye.mp3 in Resources */,
 				D028F3DE254826A8001552CA /* ithane.mp3 in Resources */,
@@ -995,9 +1033,12 @@
 				D028F37A254826A8001552CA /* unyerre.mp3 in Resources */,
 				D028F376254826A8001552CA /* arrakertelethileme.mp3 in Resources */,
 				D028F472254826A8001552CA /* alhirreme.mp3 in Resources */,
+				D028F4C025551E6D001552CA /* atyelpe.mp3 in Resources */,
+				D028F4CA25551E6D001552CA /* arlpatye.mp3 in Resources */,
 				D028F3DA254826A8001552CA /* werte.mp3 in Resources */,
 				D028F386254826A8001552CA /* arwempe.mp3 in Resources */,
 				D028F3CE254826A8001552CA /* nameakurne.mp3 in Resources */,
+				D028F4CF25551E6D001552CA /* altharte.mp3 in Resources */,
 				D028F3E2254826A8001552CA /* kwetere.mp3 in Resources */,
 				D028F37E254826A8001552CA /* akwerre.mp3 in Resources */,
 				D028F3A2254826A8001552CA /* utnerrengatye.mp3 in Resources */,
@@ -1056,6 +1097,8 @@
 				D028F43D254826A8001552CA /* tyaperapere.mp3 in Resources */,
 				D028F3B5254826A8001552CA /* tyelarre.mp3 in Resources */,
 				D028F485254826A8001552CA /* aweleawele.mp3 in Resources */,
+				D028F4CE25551E6D001552CA /* altharte.mp3 in Resources */,
+				D028F4BF25551E6D001552CA /* atyelpe.mp3 in Resources */,
 				D028F489254826A8001552CA /* yalke.mp3 in Resources */,
 				D028F3CD254826A8001552CA /* nameakurne.mp3 in Resources */,
 				D028F3FD254826A8001552CA /* ntyerreme.mp3 in Resources */,
@@ -1070,6 +1113,7 @@
 				D028F40D254826A8001552CA /* apwertealkwentyeakngerre.mp3 in Resources */,
 				D028F445254826A8001552CA /* irretye.mp3 in Resources */,
 				D028F405254826A8001552CA /* anerrirreme.mp3 in Resources */,
+				D028F4B525551E6D001552CA /* apmwe.mp3 in Resources */,
 				D028F381254826A8001552CA /* angkeme.mp3 in Resources */,
 				D028F46D254826A8001552CA /* alkwerte.mp3 in Resources */,
 				D028F3D5254826A8001552CA /* ingkeampeme.mp3 in Resources */,
@@ -1116,7 +1160,6 @@
 				D028F475254826A8001552CA /* urrtyalthe.mp3 in Resources */,
 				D028F35D254826A8001552CA /* aherreimpatye.mp3 in Resources */,
 				D028F399254826A8001552CA /* arlrwarrere.mp3 in Resources */,
-				D028F455254826A8001552CA /* atnerteurrperle.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				D028F421254826A8001552CA /* apmere.mp3 in Resources */,
 				D028F361254826A8001552CA /* urtakerte.mp3 in Resources */,
@@ -1127,8 +1170,11 @@
 				D028F42D254826A8001552CA /* anelhentye.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				D028F3F5254826A8001552CA /* antewekeantewe.mp3 in Resources */,
+				D028F4BA25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */,
+				D028F4C925551E6D001552CA /* arlpatye.mp3 in Resources */,
 				D028F429254826A8001552CA /* angayakwe.mp3 in Resources */,
 				D028F45D254826A8001552CA /* ingkwelpe.mp3 in Resources */,
+				D028F4C425551E6D001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F459254826A8001552CA /* pmerlpe.mp3 in Resources */,
 				D028F3C1254826A8001552CA /* antirrkweme.mp3 in Resources */,
 				D028F3C9254826A8001552CA /* mwekarte.mp3 in Resources */,
@@ -1141,6 +1187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2281B9BC234E44DE00B9A676 /* Stickers.xcassets in Resources */,
+				D028F4C325551E6D001552CA /* atyelpe.mp3 in Resources */,
+				D028F4B925551E6D001552CA /* apmwe.mp3 in Resources */,
+				D028F4D225551E6D001552CA /* altharte.mp3 in Resources */,
+				D028F4C825551E6D001552CA /* atnerteurrperle.mp3 in Resources */,
+				D028F4CD25551E6D001552CA /* arlpatye.mp3 in Resources */,
+				D028F4BE25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1208,7 @@
 				D028F41B254826A8001552CA /* antyame.mp3 in Resources */,
 				D028F48F254826A8001552CA /* mutekayeinentye.mp3 in Resources */,
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				D028F4D025551E6D001552CA /* altharte.mp3 in Resources */,
 				D028F3C7254826A8001552CA /* kwertare.mp3 in Resources */,
 				D028F497254826A8001552CA /* irrweurinpe.mp3 in Resources */,
 				D028F437254826A8001552CA /* intelhentye.mp3 in Resources */,
@@ -1171,17 +1224,20 @@
 				D028F49B254826A8001552CA /* yerrampe.mp3 in Resources */,
 				D028F3E3254826A8001552CA /* kwetere.mp3 in Resources */,
 				D028F41F254826A8001552CA /* antirrkeme.mp3 in Resources */,
+				D028F4BC25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */,
 				D028F45B254826A8001552CA /* pmerlpe.mp3 in Resources */,
 				D028F367254826A8001552CA /* kereakange.mp3 in Resources */,
 				D028F3BF254826A8001552CA /* arleye.mp3 in Resources */,
 				D028F39F254826A8001552CA /* anthepe.mp3 in Resources */,
 				D028F3A7254826A8001552CA /* akangkeme.mp3 in Resources */,
+				D028F4C125551E6D001552CA /* atyelpe.mp3 in Resources */,
 				D028F42B254826A8001552CA /* angayakwe.mp3 in Resources */,
 				D028F423254826A8001552CA /* apmere.mp3 in Resources */,
 				D028F3D3254826A8001552CA /* rlkerte.mp3 in Resources */,
 				D028F3FF254826A8001552CA /* ntyerreme.mp3 in Resources */,
 				D028F40B254826A8001552CA /* arelhe.mp3 in Resources */,
 				D028F413254826A8001552CA /* kwatyeurewe.mp3 in Resources */,
+				D028F4C625551E6D001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F393254826A8001552CA /* urtne.mp3 in Resources */,
 				D028F42F254826A8001552CA /* anelhentye.mp3 in Resources */,
 				D028F3B7254826A8001552CA /* tyelarre.mp3 in Resources */,
@@ -1197,6 +1253,7 @@
 				D028F45F254826A8001552CA /* ingkwelpe.mp3 in Resources */,
 				D028F37F254826A8001552CA /* akwerre.mp3 in Resources */,
 				D028F39B254826A8001552CA /* arlrwarrere.mp3 in Resources */,
+				D028F4CB25551E6D001552CA /* arlpatye.mp3 in Resources */,
 				D028F44F254826A8001552CA /* aherte.mp3 in Resources */,
 				D028F447254826A8001552CA /* irretye.mp3 in Resources */,
 				D028F407254826A8001552CA /* anerrirreme.mp3 in Resources */,
@@ -1213,7 +1270,6 @@
 				D028F3CF254826A8001552CA /* nameakurne.mp3 in Resources */,
 				D028F383254826A8001552CA /* angkeme.mp3 in Resources */,
 				D028F3F3254826A8001552CA /* ilteme.mp3 in Resources */,
-				D028F457254826A8001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F433254826A8001552CA /* arrarlkwe.mp3 in Resources */,
 				D028F46F254826A8001552CA /* alkwerte.mp3 in Resources */,
 				D028F49F254826A8001552CA /* iltye.mp3 in Resources */,
@@ -1222,6 +1278,7 @@
 				D028F377254826A8001552CA /* arrakertelethileme.mp3 in Resources */,
 				D028F493254826A8001552CA /* akearnteme.mp3 in Resources */,
 				D028F483254826A8001552CA /* ywekethe.mp3 in Resources */,
+				D028F4B725551E6D001552CA /* apmwe.mp3 in Resources */,
 				D028F477254826A8001552CA /* urrtyalthe.mp3 in Resources */,
 				D028F3DB254826A8001552CA /* werte.mp3 in Resources */,
 				D028F43F254826A8001552CA /* tyaperapere.mp3 in Resources */,
@@ -1241,6 +1298,7 @@
 			files = (
 				D028F464254826A8001552CA /* antenhe.mp3 in Resources */,
 				D028F3D4254826A8001552CA /* rlkerte.mp3 in Resources */,
+				D028F4BD25551E6D001552CA /* akngwelyeirrpelthe.mp3 in Resources */,
 				D028F418254826A8001552CA /* alhwarrpe.mp3 in Resources */,
 				D028F450254826A8001552CA /* aherte.mp3 in Resources */,
 				D028F438254826A8001552CA /* intelhentye.mp3 in Resources */,
@@ -1250,7 +1308,6 @@
 				D028F434254826A8001552CA /* arrarlkwe.mp3 in Resources */,
 				D028F48C254826A8001552CA /* yalke.mp3 in Resources */,
 				D028F424254826A8001552CA /* apmere.mp3 in Resources */,
-				D028F458254826A8001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F428254826A8001552CA /* ilentye.mp3 in Resources */,
 				D028F44C254826A8001552CA /* ure.mp3 in Resources */,
 				D028F3A8254826A8001552CA /* akangkeme.mp3 in Resources */,
@@ -1263,8 +1320,10 @@
 				D028F420254826A8001552CA /* antirrkeme.mp3 in Resources */,
 				D028F398254826A8001552CA /* arerte.mp3 in Resources */,
 				D028F38C254826A8001552CA /* arrangkwe.mp3 in Resources */,
+				D028F4B825551E6D001552CA /* apmwe.mp3 in Resources */,
 				D028F40C254826A8001552CA /* arelhe.mp3 in Resources */,
 				D028F470254826A8001552CA /* alkwerte.mp3 in Resources */,
+				D028F4C725551E6D001552CA /* atnerteurrperle.mp3 in Resources */,
 				D028F404254826A8001552CA /* akngwelye.mp3 in Resources */,
 				D028F370254826A8001552CA /* impatye.mp3 in Resources */,
 				D028F3E0254826A8001552CA /* ithane.mp3 in Resources */,
@@ -1279,9 +1338,12 @@
 				D028F37C254826A8001552CA /* unyerre.mp3 in Resources */,
 				D028F378254826A8001552CA /* arrakertelethileme.mp3 in Resources */,
 				D028F474254826A8001552CA /* alhirreme.mp3 in Resources */,
+				D028F4C225551E6D001552CA /* atyelpe.mp3 in Resources */,
+				D028F4CC25551E6D001552CA /* arlpatye.mp3 in Resources */,
 				D028F3DC254826A8001552CA /* werte.mp3 in Resources */,
 				D028F388254826A8001552CA /* arwempe.mp3 in Resources */,
 				D028F3D0254826A8001552CA /* nameakurne.mp3 in Resources */,
+				D028F4D125551E6D001552CA /* altharte.mp3 in Resources */,
 				D028F3E4254826A8001552CA /* kwetere.mp3 in Resources */,
 				D028F380254826A8001552CA /* akwerre.mp3 in Resources */,
 				D028F3A4254826A8001552CA /* utnerrengatye.mp3 in Resources */,
